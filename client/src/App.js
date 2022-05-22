@@ -3,9 +3,12 @@ import Main from './component/Main';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <header>
+      <h1>Mini-guide</h1>
+      </header>
+
       <div className="content">
-        <h1>Mini-guide</h1>
       </div>
       <Main />
     </div>
