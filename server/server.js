@@ -44,6 +44,10 @@ app.get("/:city/hospitals", (req, res) => {
   res.send(allCities[city].hospitals);
 });
 
+app.get("/*", (req, res, next) => {
+  res.redirect("/")
+})
+
 app.listen(5000, () => {
   console.log("App listening on port:5000");
 });
