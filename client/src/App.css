@@ -1,4 +1,6 @@
 header {
+  width: 100%;
+  position: fixed;
   text-align: center;
   background-color: #262b42;
   color: #fff
@@ -11,6 +13,7 @@ li {
   font-size: 28px;
   background-color: rgb(33, 36, 52);
   border-bottom: 1px solid #4c5370;
+  cursor: pointer;
 }
 
 li a,
@@ -22,6 +25,10 @@ a:hover {
 .wrapper {
   display: flex;
   width: 100%;
+}
+
+.sidebar-header {
+  margin-top: 38px;
 }
 
 .sidebar {
@@ -49,6 +56,7 @@ main {
   padding: 10px;
   display: flex;
   align-items: flex-start;
+  margin-top: 50px;
   margin-left: 280px;
   width: 80%;
 }
