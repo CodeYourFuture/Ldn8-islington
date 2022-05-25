@@ -34,7 +34,7 @@ const Areas = ({ areas, info, detailHandler }) => {
                               detailHandler(area, infoDetail)
                             }}
                           >
-                            <a href="#">{infoDetail}</a>
+                            {infoDetail}
                           </li>
                         ))}
                       </ul>
