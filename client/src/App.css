@@ -15,8 +15,8 @@ li {
   padding: 5px;
   color: white;
   font-size: 28px;
-  background-color: aqua;
-  border: 1px solid rgb(148, 148, 239);
+  background-color: rgb(33, 36, 52); 
+  border-bottom: 1px solid #4c5370;
 }
 
 li a, a:hover{
@@ -30,13 +30,18 @@ li a, a:hover{
 }
 
 #sidebar {
-  width: 250px;
+  width: 260px;
   position: fixed;
+  padding: 10px;
   top: 0;
   left: 0;
   height: 100vh;
   z-index: 999;
-  background: #7386D5;
+  background: #262b42;
   color: #fff;
   transition: all 0.3s;
+}
+
+.active {
+  background-color: #262b42;
 }

@@ -29,7 +29,11 @@ const Main = () => {
   useEffect(() => {
     fetch(`https://localhost:5000/api/${area}/${areaInfo}`)
       .then((res) => res.json())
-      .then((data) => setDetails(data))
+      .then((data) => {
+        setDetails(data)
+        console.log(data)
+      }
+        )
   }, [area, areaInfo])
 
   return (
