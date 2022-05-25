@@ -2,8 +2,10 @@ import React from 'react'
 
 const Details = ({ details }) => {
   return (
-    <div>
-      {console.log(details)}
+    <div className="details">
+     
+        {console.log(details)}
+
     </div>
   )
 }
