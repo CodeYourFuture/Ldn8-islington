@@ -1,5 +1,7 @@
 header {
   text-align: center;
+  background-color: #262b42;
+  color: #fff
 }
 
 .sidebar {
@@ -13,7 +15,7 @@ sidebar {
 
 li {
   padding: 5px;
-  color: white;
+  color: #fff;
   font-size: 28px;
   background-color: rgb(33, 36, 52); 
   border-bottom: 1px solid #4c5370;
@@ -21,7 +23,7 @@ li {
 
 li a, a:hover{
   text-decoration: none;
-  color:white;
+  color:#fff;
 }
 
 .wrapper {
@@ -44,4 +46,13 @@ li a, a:hover{
 
 .active {
   background-color: #262b42;
+}
+
+main {
+  display: flex;
+}
+
+.sidebar-header {
+  margin-top: 40px;
+
 }

@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-const Details = ({details}) => {
-    return ( 
-        <div>
-           {details}           
-        </div>
-     );
+const Details = ({ details }) => {
+  return (
+    <div>
+      {console.log(details)}
+    </div>
+  )
 }
- 
-export default Details;
+
+export default Details

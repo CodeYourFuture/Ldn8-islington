@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <header>
-      <h1>Mini-guide</h1>
+      <h1>London Mini Guide</h1>
       </header>
 
       <div className="content">
