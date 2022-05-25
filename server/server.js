@@ -11,16 +11,29 @@ const heathrow = require('../data/Heathrow.json')
 const stratford = require('../data/Stratford.json')
 
 const allAreas = { harrow, heathrow, stratford }
+const allArea = [ harrow, heathrow, stratford ]
 const areas = [ 'Harrow' ,  'Heathrow' ,  'Stratford' ]
 
 app.get('/api/pharmacies', (req, res) => {
+  
+  let list = []
+  allArea.map( area => {
+     area.pharmacies.map(el=> list.push(el))
+    })
+  
   res.json(
-    harrow.pharmacies.concat(heathrow.pharmacies).concat(stratford.pharmacies),
+     list
+    // harrow.pharmacies.concat(heathrow.pharmacies).concat(stratford.pharmacies)
   )
 })
 
 app.get('/api/colleges', (req, res) => {
-  res.json(harrow.colleges.concat(heathrow.colleges).concat(stratford.colleges))
+  let list = []
+  allArea.map( area => {
+     area.colleges.map(el=> list.push(el))
+  })
+  
+  res.json(list)
 })
 
 app.get('/api/doctors', (req, res) => {
@@ -29,7 +42,7 @@ app.get('/api/doctors', (req, res) => {
 
 app.get('/api/hospitals', (req, res) => {
   res.json(
-    harrow.hospitals.concat(heathrow.hospitals).concat(stratford.hospitals),
+    harrow.hospitals.concat(heathrow.hospitals).concat(stratford.hospitals)
   )
 })
 

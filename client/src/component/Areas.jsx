@@ -7,7 +7,7 @@ const Areas = ({ areas, info, detailHandler }) => {
         <div className="wrapper">
           <nav id="sidebar">
             <div className="sidebar-header">
-              <h3>London mini guide</h3>
+              <h4>London areas</h4>
             </div>
 
             <p>A mini-guide app for different areas in London</p>
