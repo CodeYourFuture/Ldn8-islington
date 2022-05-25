@@ -3,7 +3,7 @@ import Areas from './Areas'
 import Details from './Details'
 
 const Main = () => {
-  const api = 'http://localhost:5000/api'
+  const api = 'https://london-miniguide-ds.glitch.me/api'
   const [areas, setAreas] = useState([])
   const [info, setInfo] = useState([])
   const [details, setDetails] = useState([])
