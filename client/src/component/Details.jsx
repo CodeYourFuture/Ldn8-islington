@@ -4,6 +4,7 @@ const Details = ({ details }) => {
       
   return (
     <div className="details">
+
       <table className="table table-striped w-auto thead-light">
         <thead className="">
           <tr>

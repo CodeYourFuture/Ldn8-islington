@@ -28,13 +28,19 @@ const Main = () => {
 
 
   useEffect(() => {
+<<<<<<< HEAD
     // console.log(`${api}/${area}/${areaInfo}`)
 
+=======
+>>>>>>> 7d08cd281f625eaf076c8000d701fce7f2a01349
     fetch(`${api}/${area}/${areaInfo}`)
       .then((res) => res.json())
       .then((data) => {
         setDetails(data)
+<<<<<<< HEAD
         // console.log(data)
+=======
+>>>>>>> 7d08cd281f625eaf076c8000d701fce7f2a01349
       }
         )
   }, [area, areaInfo])
