@@ -45,29 +45,18 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-# Server side 
+## Server side 
+
+You can learn more in the [Express Node.js documentation](https://expressjs.com/).
+
+To learn how to install, check out the [Express installing documentation](https://expressjs.com/en/starter/installing.html).
+
+The server side consists of
+
+- Express framework 
+- cors middleware, check out the [cors documentation](https://expressjs.com/en/resources/middleware/cors.html).
+- CRUD operations to work with our json files ( Harrow.json, Heathrow.json, Stratford.json) stored in data folder 
+- our server.js has then been deployed to Glitch [More about Glitch](https://glitch.com/).
+- The project is available on Netlify using the link below: coming up
