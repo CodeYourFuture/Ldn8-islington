@@ -6,7 +6,6 @@ header {
   color: #fff
 }
 
-
 li {
   padding: 5px;
   color: #fff;
@@ -54,8 +53,7 @@ main {
 
 .details {
   padding: 10px;
-  display: flex;
-  align-items: flex-start;
+  display: block;
   margin-top: 50px;
   margin-left: 280px;
   width: 80%;
@@ -67,4 +65,8 @@ h1 {
 
 td a:hover {
   color: black;
+}
+
+tr {
+  white-space: nowrap;
 }

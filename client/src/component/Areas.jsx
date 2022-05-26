@@ -13,7 +13,6 @@ const Areas = ({ areas, info, detailHandler }) => {
             <p>A mini-guide app for different areas in London</p>
             <ul className="list-unstyled components">
               {areas.map((area, index) => {
-                // console.log(area)
                 const pageSubmenu = 'pageSubmenu' + index
                 const pageSubmenuHash = '#pageSubmenu' + index
                 return (

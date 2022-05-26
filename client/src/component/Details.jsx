@@ -1,11 +1,18 @@
-import React from "react";
+import React from 'react'
 
-const Details = ({ details }) => {
-      
+const Details = ({ details, area, areaInfo }) => {
+  console.log(details)
+
   return (
     <div className="details">
-
-      <table className="table table-striped w-auto thead-light">
+      <div>
+        <h4>
+          {area} / {areaInfo}
+          {/* {area[0].toUpperCase().concat(area.slice(1))} /{' '} */}
+          {/* {areaInfo[0].toUpperCase().concat(areaInfo.slice(1))} */}
+        </h4>
+      </div>
+      <table className="table table-striped no-wrap w-auto thead-light">
         <thead className="">
           <tr>
             <th>#</th>
@@ -17,7 +24,6 @@ const Details = ({ details }) => {
         </thead>
         <tbody>
           {details.map((detail, index) => {
-           
             return (
               <tr>
                 <th scope="row" key={index}>
@@ -27,20 +33,21 @@ const Details = ({ details }) => {
                 <td>{detail.address}</td>
                 <td>{detail.phone}</td>
                 <td>
-                  <a href={detail.website}>
-                    
-                    {detail.website.length > 70
-                      ? detail.website.slice(0,70)
-                      : detail.website}
-                  </a>
+                  {detail.hasOwnProperty('website') && (
+                    <a href={detail.website}>
+                      {detail.website.length > 50
+                        ? detail.website.slice(0, 50) + '...'
+                        : detail.website}
+                    </a>
+                  )}
                 </td>
               </tr>
-            );
+            )
           })}
         </tbody>
       </table>
     </div>
-  );
-};
+  )
+}
 
-export default Details;
+export default Details
