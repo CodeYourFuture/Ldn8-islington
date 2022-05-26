@@ -34,7 +34,7 @@ const Details = ({ details, area, areaInfo }) => {
                 <td>{detail.phone}</td>
                 <td>
                   {detail.hasOwnProperty('website') && (
-                    <a href={detail.website}>
+                    <a href={detail.website} target="new window">
                       {detail.website.length > 50
                         ? detail.website.slice(0, 50) + '...'
                         : detail.website}
