@@ -10,6 +10,7 @@ function App() {
 
       <div className="content">
       </div>
+      {/* {localStorage.setItem('name','Chris')} */}
       <Main />
     </div>
   )

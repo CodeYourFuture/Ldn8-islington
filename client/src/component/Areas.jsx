@@ -16,8 +16,7 @@ const Areas = ({ areas, info, detailHandler }) => {
                 const pageSubmenu = 'pageSubmenu' + index
                 const pageSubmenuHash = '#pageSubmenu' + index
                 return (
-                  <>
-                    <li className="active" key={index}>
+                    <li className="active" scop="row" key={index}>
                       <a
                         href={pageSubmenuHash}
                         data-toggle="collapse"
@@ -28,7 +27,7 @@ const Areas = ({ areas, info, detailHandler }) => {
                       </a>
                       <ul className="collapse list-unstyled" id={pageSubmenu}>
                         {info.map((infoDetail) => (
-                          <li
+                          <li scop="row" key={Math.random()}
                             onClick={() => {
                               detailHandler(area, infoDetail)
                             }}
@@ -38,7 +37,6 @@ const Areas = ({ areas, info, detailHandler }) => {
                         ))}
                       </ul>
                     </li>
-                  </>
                 )
               })}
             </ul>
